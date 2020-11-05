@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="839b3ba1-5457-40f8-8108-deb541aa6d48" name="vrm_server" url="http://192.168.18.24">
+        <fileTransfer rootFolder="/var/www/html/vrm_projekt" accessType="SFTP" host="192.168.18.24" port="22" sshConfigId="620aee08-7ad0-46fc-928c-6b9432e1c4a6" sshConfig="user@192.168.18.24:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
