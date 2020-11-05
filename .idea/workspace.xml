@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="007c0313-28b4-4373-9ac7-1adc290936bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/notebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bookings/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BookingIndex.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bookings/bookings.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bookings/create_booking.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bookings/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bookings/header.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LuckyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LuckyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bookings/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bookings/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604592106153</updated>
-      <workItem from="1604592107174" duration="1850000" />
+      <workItem from="1604592107174" duration="2699000" />
     </task>
     <task id="LOCAL-00001" summary="Muudetud sisuga raamistiku failid seoses composter paigaldusega;&#10;Katsetatud controlleri ja template loomine ja laiendamine vastavalt symfony tutorial õpetusele">
       <created>1604593430515</created>
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604593430515</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Loodud põhistiil tulevale rakendusele">
+      <created>1604594028197</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604594028197</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +149,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Muudetud sisuga raamistiku failid seoses composter paigaldusega;&#10;Katsetatud controlleri ja template loomine ja laiendamine vastavalt symfony tutorial õpetusele" />
-    <option name="LAST_COMMIT_MESSAGE" value="Muudetud sisuga raamistiku failid seoses composter paigaldusega;&#10;Katsetatud controlleri ja template loomine ja laiendamine vastavalt symfony tutorial õpetusele" />
+    <MESSAGE value="Loodud põhistiil tulevale rakendusele" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loodud põhistiil tulevale rakendusele" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1104" y="182" key="#Deployment" timestamp="1604592280606">
@@ -153,18 +161,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1072" y="169" key="#SSH_Configurations/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604592156114" />
-    <state x="1074" y="89" key="CommitChangelistDialog2" timestamp="1604593429677">
+    <state x="597" y="89" key="CommitChangelistDialog2" timestamp="1604594027339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1074" y="89" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604593429677" />
-    <state x="1291" y="246" key="NewPhpClassDialog" timestamp="1604592238953">
+    <state x="597" y="89" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604594027339" />
+    <state x="1291" y="246" key="NewPhpClassDialog" timestamp="1604594405605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1291" y="246" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604592238953" />
-    <state x="1040" y="243" key="Vcs.Push.Dialog.v2" timestamp="1604593441545">
+    <state x="1291" y="246" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604594405605" />
+    <state x="1040" y="243" key="Vcs.Push.Dialog.v2" timestamp="1604594030958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1040" y="243" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604593441545" />
+    <state x="1040" y="243" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604594030958" />
     <state x="1338" y="254" key="ftp.server.browser" timestamp="1604592168795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
