@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="007c0313-28b4-4373-9ac7-1adc290936bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Entity/Booking.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/BookingRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vrm_projekt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vrm_projekt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BookingIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BookingIndex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +92,13 @@
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/vendor/symfony/flex" />
       <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jsU57ySqfJWdAtGN8t3TdYHhxe" />
@@ -109,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604592106153</updated>
-      <workItem from="1604592107174" duration="4350000" />
+      <workItem from="1604592107174" duration="5582000" />
     </task>
     <task id="LOCAL-00001" summary="Muudetud sisuga raamistiku failid seoses composter paigaldusega;&#10;Katsetatud controlleri ja template loomine ja laiendamine vastavalt symfony tutorial õpetusele">
       <created>1604593430515</created>
@@ -153,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604596387784</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ülesanne 3">
+      <created>1604596485360</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604596485360</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +197,8 @@
     <MESSAGE value="Ülesanne 1" />
     <MESSAGE value="Ülesanne 2" />
     <MESSAGE value="Loodud vorm ja lisatud vormi stiil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loodud vorm ja lisatud vormi stiil" />
+    <MESSAGE value="Ülesanne 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ülesanne 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1104" y="182" key="#Deployment" timestamp="1604592280606">
@@ -188,18 +209,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1072" y="169" key="#SSH_Configurations/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604592156114" />
-    <state x="597" y="89" key="CommitChangelistDialog2" timestamp="1604596386960">
+    <state x="597" y="89" key="CommitChangelistDialog2" timestamp="1604596484579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="597" y="89" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604596386960" />
-    <state x="1291" y="246" key="NewPhpClassDialog" timestamp="1604594405605">
+    <state x="597" y="89" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604596484579" />
+    <state x="1291" y="246" key="NewPhpClassDialog" timestamp="1604597173838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1291" y="246" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604594405605" />
-    <state x="1040" y="243" key="Vcs.Push.Dialog.v2" timestamp="1604596388912">
+    <state x="1291" y="246" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604597173838" />
+    <state x="1283" y="447" key="NewPhpFileDialog" timestamp="1604597222001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1040" y="243" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604596388912" />
+    <state x="1283" y="447" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604597222001" />
+    <state x="1040" y="243" key="Vcs.Push.Dialog.v2" timestamp="1604596486485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1040" y="243" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604596486485" />
     <state x="1338" y="254" key="ftp.server.browser" timestamp="1604592168795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
