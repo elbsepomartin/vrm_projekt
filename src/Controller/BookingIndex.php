@@ -50,17 +50,17 @@ class BookingIndex extends AbstractController
                 'required' => true,
                 'widget' => 'single_text'
             ])
-            ->add('nrOfPeople', IntegerType::class, [
+            ->add('numberOfPeople', IntegerType::class, [
                 'required' => true
             ])
-            ->add('payingMethod', ChoiceType::class, [
+            ->add('paymentMethod', ChoiceType::class, [
                 'choices' => [
                     'cash' => 'cash',
-                    'transfer' => 'transfer'
+                    'bank transfer' => 'bank transfer'
                 ],
                 'required' => true
             ])
-            ->add('save', SubmitType::class, ['label' => 'Create Booking'])
+            ->add('save', SubmitType::class, ['label' => 'Send booking data'])
             ->getForm();
 
         return $this->render('bookings/create_booking.html.twig', [
