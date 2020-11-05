@@ -1,8 +1,5 @@
 <?php
-
 namespace App\Entity;
-
-use App\Repository\BookingRepository;
 use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass="BookingsRepository")
@@ -13,62 +10,57 @@ class Bookings
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
-     * @ORM\Column(name="firstName", type="string", length=40, nullable=false)
+     * @ORM\Column(type="string", length=40, nullable=false)
      */
     private $firstName;
 
     /**
-     * @ORM\Column(name="lastName", type="string", length=40, nullable=false)
+     * @ORM\Column(type="string", length=40, nullable=false)
      */
     private $lastName;
 
     /**
-     * @ORM\Column(name="phone", type="string", length=10, nullable=false)
+     * @ORM\Column(type="string", length=10, nullable=false)
      */
     private $phone;
 
     /**
-     * @ORM\Column(name="email", type="string", length=20, nullable=false)
+     * @ORM\Column(type="string", length=40, nullable=false)
      */
     private $email;
 
     /**
-     * @ORM\Column(name="birthday", type="date", nullable=false)
+     * @ORM\Column(type="date", nullable=false)
      */
-    private $birthday;
+    private $birthdate;
 
     /**
-     * @ORM\Column(name="startDate", type="date", nullable=false)
+     * @ORM\Column(type="date", nullable=false)
      */
     private $startDate;
 
     /**
-     * @ORM\Column(name="endDate", type="date", nullable=false)
+     * @ORM\Column(type="date", nullable=false)
      */
     private $endDate;
 
     /**
-     * @ORM\Column(name="arrivalTime", type="time", nullable=true)
+     * @ORM\Column(type="time", nullable=true)
      */
     private $arrivalTime;
 
     /**
-     * @ORM\Column(name="additionalInformation", type="text")
+     * @ORM\Column(type="integer", nullable=false)
      */
-    private $additionalInformation;
+    private $numberOfPeople;
 
     /**
-     * @ORM\Column(name="nrOfPeople", type="integer", nullable=false)
-     */
-    private $nrOfPeople;
-
-    /**
-     * @ORM\Column(name="payingMethod", type="string", length=10, nullable=false)
+     * @ORM\Column(type="string", length=10, nullable=false)
      */
     private $payingMethod;
 
@@ -115,9 +107,9 @@ class Bookings
     /**
      * @return mixed
      */
-    public function getBirthday()
+    public function getBirthdate()
     {
-        return $this->birthday;
+        return $this->birthdate;
     }
 
     /**
@@ -147,17 +139,9 @@ class Bookings
     /**
      * @return mixed
      */
-    public function getAdditionalInformation()
+    public function getNumberOfPeople()
     {
-        return $this->additionalInformation;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNrOfPeople()
-    {
-        return $this->nrOfPeople;
+        return $this->numberOfPeople;
     }
 
     /**
@@ -209,11 +193,11 @@ class Bookings
     }
 
     /**
-     * @param mixed $birthday
+     * @param mixed $birthdate
      */
-    public function setBirthday($birthday)
+    public function setBirthdate($birthdate)
     {
-        $this->birthday = $birthday;
+        $this->birthdate = $birthdate;
     }
 
     /**
@@ -241,19 +225,11 @@ class Bookings
     }
 
     /**
-     * @param mixed $additionalInformation
-     */
-    public function setAdditionalInformation($additionalInformation)
-    {
-        $this->additionalInformation = $additionalInformation;
-    }
-
-    /**
      * @param mixed $numberOfPeople
      */
-    public function setnrOfPeople($nrOfPeople)
+    public function setNumberOfPeople($numberOfPeople)
     {
-        $this->nrOfPeople = $nrOfPeople;
+        $this->numberOfPeople = $numberOfPeople;
     }
 
     /**

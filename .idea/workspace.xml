@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="007c0313-28b4-4373-9ac7-1adc290936bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Booking.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/BookingRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bookings/list.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vrm_projekt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vrm_projekt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BookingIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BookingIndex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LuckyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Bookings.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Bookings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/BookingRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/BookingRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604592106153</updated>
-      <workItem from="1604592107174" duration="5582000" />
+      <workItem from="1604592107174" duration="9606000" />
     </task>
     <task id="LOCAL-00001" summary="Muudetud sisuga raamistiku failid seoses composter paigaldusega;&#10;Katsetatud controlleri ja template loomine ja laiendamine vastavalt symfony tutorial õpetusele">
       <created>1604593430515</created>
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604596485360</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Loodud andmebaas ja tabel; Parandatud andmetabel">
+      <created>1604597843258</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604597843258</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Muudetud sisuga raamistiku failid seoses composter paigaldusega;&#10;Katsetatud controlleri ja template loomine ja laiendamine vastavalt symfony tutorial õpetusele" />
     <MESSAGE value="Loodud põhistiil tulevale rakendusele" />
     <MESSAGE value="Loodud 2 route'i ja template'id nende jaoks" />
@@ -198,7 +207,8 @@
     <MESSAGE value="Ülesanne 2" />
     <MESSAGE value="Loodud vorm ja lisatud vormi stiil" />
     <MESSAGE value="Ülesanne 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ülesanne 3" />
+    <MESSAGE value="Loodud andmebaas ja tabel; Parandatud andmetabel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loodud andmebaas ja tabel; Parandatud andmetabel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1104" y="182" key="#Deployment" timestamp="1604592280606">
@@ -209,25 +219,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1072" y="169" key="#SSH_Configurations/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604592156114" />
-    <state x="597" y="89" key="CommitChangelistDialog2" timestamp="1604596484579">
+    <state x="998" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604598978729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="597" y="89" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604596484579" />
-    <state x="1291" y="246" key="NewPhpClassDialog" timestamp="1604597173838">
+    <state x="998" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604598978729" />
+    <state x="630" y="78" width="749" height="860" key="CommitChangelistDialog2" timestamp="1604597842496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1291" y="246" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604597173838" />
-    <state x="1283" y="447" key="NewPhpFileDialog" timestamp="1604597222001">
+    <state x="630" y="78" width="749" height="860" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604597842496" />
+    <state x="1291" y="246" key="NewPhpClassDialog" timestamp="1604601127558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1283" y="447" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604597222001" />
-    <state x="1040" y="243" key="Vcs.Push.Dialog.v2" timestamp="1604596486485">
+    <state x="1291" y="246" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604601127558" />
+    <state x="1283" y="447" key="NewPhpFileDialog" timestamp="1604600779473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1040" y="243" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604596486485" />
+    <state x="1283" y="447" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604600779473" />
+    <state x="1040" y="243" key="Vcs.Push.Dialog.v2" timestamp="1604597844190">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1040" y="243" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604597844190" />
     <state x="1338" y="254" key="ftp.server.browser" timestamp="1604592168795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1338" y="254" key="ftp.server.browser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604592168795" />
+    <state x="1111" y="230" key="search.everywhere.popup" timestamp="1604599563362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1111" y="230" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604599563362" />
   </component>
 </project>
