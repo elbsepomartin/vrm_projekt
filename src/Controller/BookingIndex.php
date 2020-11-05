@@ -90,18 +90,18 @@ class BookingIndex extends AbstractController
                 $booking->setLastName($data['lastName']);
                 $booking->setPhone($data['phone']);
                 $booking->setEmail($data['email']);
-                $booking->setBirthdate(new \DateTime($data['birthday']->format('Y-m-d')));
+                $booking->setBirthday(new \DateTime($data['birthday']->format('Y-m-d')));
                 $booking->setStartDate(new \DateTime($data['startDate']->format('Y-m-d')));
                 $booking->setEndDate(new \DateTime($data['endDate']->format('Y-m-d')));
                 $booking->setArrivalTime(new \DateTime($data['arrivalTime']->format('H:i:s')));
-                $booking->setNumberOfPeople($data['nrOfPeople']);
+                $booking->setnrOfPeople($data['nrOfPeople']);
                 $booking->setPayingMethod($data['payingMethod']);
 
                 $entityManager->persist($booking);
 
                 $entityManager->flush();
 
-
+                return $this->redirectToRoute('bookings');
             }
         }
 
@@ -115,5 +115,11 @@ class BookingIndex extends AbstractController
     /**
      * @Route("/bookings", name="bookings")
      */
-
+    public function bookings()
+    {
+        $this->generateUrl('bookings');
+        $repository = $this->getDoctrine()->getRepository(Booking::class);
+        $bookings = $repository->findAll();
+        return $this->render('bookings/list.html.twig', ['bookings' => $bookings]);
+    }
 }
