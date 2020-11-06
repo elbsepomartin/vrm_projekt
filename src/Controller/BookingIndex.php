@@ -20,13 +20,13 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 use Doctrine\ORM\EntityManagerInterface;
-use App\Entity\Bookings;
+use App\Entity\Booking;
 
 
 class BookingIndex extends AbstractController
 {
     /**
-     * @Route("/", name="create_booking")
+     * @Route("/create_booking", name="create_booking")
      */
     public function create_booking(Request $request)
     {
@@ -70,10 +70,6 @@ class BookingIndex extends AbstractController
                 ],
                 'required' => true
             ])
-            ->add('additionalInformation', TextareaType::class, [
-                'required' => false,
-                'empty_data' => 'no additional information'
-            ])
             ->add('submit', SubmitType::class, ['label' => 'Create Bookings'])
             ->getForm();
 
@@ -84,7 +80,7 @@ class BookingIndex extends AbstractController
 
                 $entityManager = $this->getDoctrine()->getManager();
 
-                $booking = new Bookings();
+                $booking = new Booking();
 
                 $booking->setFirstName($data['firstName']);
                 $booking->setLastName($data['lastName']);

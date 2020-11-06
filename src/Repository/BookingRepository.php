@@ -2,15 +2,15 @@
 
 namespace App\Repository;
 
-use App\Entity\Bookings;
+use App\Entity\Booking;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method Bookings|null find($id, $lockMode = null, $lockVersion = null)
- * @method Bookings|null findOneBy(array $criteria, array $orderBy = null)
- * @method Bookings[]    findAll()
- * @method Bookings[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Booking|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Booking|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Booking[]    findAll()
+ * @method Booking[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class BookingRepository extends ServiceEntityRepository
 {
