@@ -7,10 +7,12 @@
 {% block stylesheets %}
     <link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/base.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/menu.css">
 {% endblock %}
 
 {% block body %}
     {{ include('bookings/header.html.twig') }}
+    {{ include('bookings/menu.html.twig') }}
     <div class="content">
         <div class="content">
             {% block content %}{% endblock %}
